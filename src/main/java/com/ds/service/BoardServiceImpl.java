@@ -16,7 +16,7 @@ import lombok.extern.log4j.Log4j;
 public class BoardServiceImpl implements BoardService {
 	
 	private BoardMapper mapper;
-	
+	private int var = 1;
 	@Override
 	public void register(BoardVO board) {
 		log.info("register........");
