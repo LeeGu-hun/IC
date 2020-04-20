@@ -11,5 +11,6 @@
 
 <P>  The time on the server is ${serverTime}. </P>
 <h1>IC</h1>
+<h1>IC</h1>
 </body>
 </html>
