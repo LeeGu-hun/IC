@@ -39,15 +39,21 @@
 		
 		var zoomControl = new kakao.maps.ZoomControl();
 		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-		
-		});
-	function marker() {
-		var markerPosition = new kakao.maps.LatLng(navigator.geolocation.getCurrentPosition());
-		
+		var imageSrc = '/resources/img/red.png';   
+	    var imageSize = new kakao.maps.Size(15, 15); 
+	    var imageOption = {offset: new kakao.maps.Point(10, 10)};		
+		var markerPosition = new kakao.maps.LatLng(latitude,longitude);
+		var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
 		var marker = new kakao.maps.Marker({
-			position: markerPosition
+			position: markerPosition,
+			image : markerImage
 		});
-	}
+		marker.setMap(map);
+		
+	});
+	
+		
+	
 	
 	</script>
 <%@ include file="/WEB-INF/views/includes/footer.jsp"%>
