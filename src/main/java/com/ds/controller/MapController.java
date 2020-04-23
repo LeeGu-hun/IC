@@ -17,4 +17,9 @@ public class MapController {
 	public void usermap() {
 		log.info("usermap");
 	}
+	
+	@GetMapping("/test")
+	public void test() {
+		log.info("test");
+	}
 }

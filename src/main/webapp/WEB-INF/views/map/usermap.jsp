@@ -39,8 +39,8 @@
 		
 		var zoomControl = new kakao.maps.ZoomControl();
 		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-		var imageSrc = '/resources/img/red.png';   
-	    var imageSize = new kakao.maps.Size(15, 15); 
+		var imageSrc = '/resources/img/me.png';   
+	    var imageSize = new kakao.maps.Size(18, 27); 
 	    var imageOption = {offset: new kakao.maps.Point(10, 10)};		
 		var markerPosition = new kakao.maps.LatLng(latitude,longitude);
 		var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
