@@ -22,6 +22,7 @@
           </div>
         </div>
       </div>
+      
    <script>
    navigator.geolocation.getCurrentPosition(function(pos) {
 	    var latitude = pos.coords.latitude;
@@ -38,6 +39,15 @@
 		
 		var zoomControl = new kakao.maps.ZoomControl();
 		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-	});
-	</script>   
+		
+		});
+	function marker() {
+		var markerPosition = new kakao.maps.LatLng(navigator.geolocation.getCurrentPosition());
+		
+		var marker = new kakao.maps.Marker({
+			position: markerPosition
+		});
+	}
+	
+	</script>
 <%@ include file="/WEB-INF/views/includes/footer.jsp"%>
