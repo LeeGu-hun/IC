@@ -2,9 +2,8 @@ package com.ds.mapper;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Select;
-
 import com.ds.domain.ProdVO;
+
 
 public interface ProdMapper {
 	public void insert(ProdVO prod);
