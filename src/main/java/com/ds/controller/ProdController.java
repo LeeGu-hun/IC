@@ -5,8 +5,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.zerock.domain.ProdVO;
-import org.zerock.service.ProdService;
+
+import com.ds.domain.ProdVO;
+import com.ds.service.ProdService;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
