@@ -13,6 +13,8 @@
 
 <P>  The time on the server is ${serverTime}. </P>
 <a href="/map/usermap">지도가기</a>
+<a href="/prod/register">등록</a><br>
+<a href="/prod/list">조회</a>
 <h1>IC</h1>
 <h1>IC</h1>
 <h1>IC</h1>
