@@ -2,37 +2,27 @@
 	contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
-<%@ include file="/WEB-INF/views/includes/header.jsp"%>
-
+<%@ taglib uri="http://www.springframework.org/security/tags"
+	prefix="sec"%>
+<%@ include file="/WEB-INF/views/userincludes/header.jsp"%>
+<style>
+	.main-panel>.content {
+  padding: 78px 30px 30px 30px;
+  min-height: calc(100vh - 70px);
+  height: 100px;
+}
+</style>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=47c77bec82edfee45bb2b7d5d9de36ff"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-      <div class="content">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card card-plain">
-              <div class="card-header">
-                Google Maps
-              </div>
-              <div class="card-body">
-                <div id="map" class="map">
-                
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-   <script>
-   
-   
-   
+
+	<div class="content">
+		Google Maps
+		<div id="map" class="map"></div>
+	</div>
+
+<script>
    $(function(){
-	   
    });
-   
- 
    
    navigator.geolocation.getCurrentPosition(function(pos) {
 	    var latitude = pos.coords.latitude;
@@ -91,4 +81,4 @@
 
 
 	</script>
-<%@ include file="/WEB-INF/views/includes/footer.jsp"%>
+<%@ include file="/WEB-INF/views/userincludes/footer.jsp"%>

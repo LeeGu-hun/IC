@@ -8,9 +8,9 @@ import com.ds.domain.ProdVO;
 import com.ds.mapper.ProdMapper;
 
 import lombok.AllArgsConstructor;
-import lombok.extern.log4j.Log4j;
 
-@Log4j
+
+
 @Service
 @AllArgsConstructor
 public class ProdServiceImpl implements ProdService {

@@ -2,14 +2,14 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.zerock.mapper.ProdMapper">
+<mapper namespace="com.ds.mapper.ProdMapper">
 
 	<insert id="insert">
         insert into test_product(pnum, pname, price, quantity, snum) 
         values(#{pnum}, #{pname}, #{price}, #{quantity},#{snum})
 	</insert>
 	
-	<select id="getList" resultType="org.zerock.domain.ProdVO">
+	<select id="getList" resultType="com.ds.domain.ProdVO">
 		select * from test_product ORDER by pnum asc
 	</select>
 	
