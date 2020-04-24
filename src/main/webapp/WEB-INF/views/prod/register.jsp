@@ -1,14 +1,5 @@
 <%@ page language="java" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <%@ include file="/WEB-INF/views/includes/header.jsp"%>
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Insert title here</title>
-  <style></style>
-  <script></script>
-</head>
 
 <style>
   #modal,
@@ -87,7 +78,7 @@
   });
 </script>
 
-<body>
+
   <div class="content">
     <form action="/prod/register" method="post">
       <div class="row">
@@ -140,9 +131,10 @@
               </div>
 
               <div class="card-footer">
-                <button type="button" id="modal_opne_btn" class="btn btn-fill btn-primary">전송</button>
+                
+                <button type="button" id="modal_opne_btn" class="btn btn-fill btn-info">전송</button>
                 <button type="button" onclick="location.href='/prod/list' "
-                  class="btn btn-fill btn-primary">목록보기</button>
+                  class="btn btn-fill btn-info">목록보기</button>
               </div>
 
               <!-- modal start-->
@@ -171,7 +163,5 @@
       </div>
     </form>
   </div>
-</body>
 
-</html>
 <%@ include file="/WEB-INF/views/includes/footer.jsp"%>
